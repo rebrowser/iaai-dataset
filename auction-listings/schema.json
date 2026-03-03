@@ -1,0 +1,583 @@
+[
+  {
+    "name": "_primaryKey",
+    "type": "string",
+    "description": "Unique identifier for this record",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "_firstSeenAt",
+    "type": "datetime",
+    "description": "First time this record was seen",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "_lastSeenAt",
+    "type": "datetime",
+    "description": "Last time this record was updated",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "stockNumber",
+    "type": "string",
+    "description": "Unique IAA stock number (auction identifier)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "itemId",
+    "type": "string",
+    "description": "IAA item ID for the auction listing",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "salvageId",
+    "type": "string",
+    "description": "IAA salvage ID (used in image URLs)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "auctionId",
+    "type": "string",
+    "description": "IAA auction ID",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "vin",
+    "type": "string",
+    "description": "Vehicle Identification Number",
+    "fillRate": 100,
+    "premium": true
+  },
+  {
+    "name": "vinStatus",
+    "type": "string",
+    "description": "VIN validation status (OK, Missing, Damaged, Retagged, Altered) - fraud indicator",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "year",
+    "type": "float",
+    "description": "Vehicle model year",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "make",
+    "type": "string",
+    "description": "Vehicle manufacturer (e.g., CHEVROLET, TOYOTA)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "model",
+    "type": "string",
+    "description": "Vehicle model name (e.g., SILVERADO 1500, CAMRY)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "series",
+    "type": "string",
+    "description": "Vehicle series/trim (e.g., LTZ, SE, LS)",
+    "fillRate": 90,
+    "premium": false
+  },
+  {
+    "name": "bodyStyle",
+    "type": "string",
+    "description": "Body style (SEDAN, EXTENDED CAB, SUV, COUPE, etc.)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "exteriorColor",
+    "type": "string",
+    "description": "Exterior color (WHITE, BLACK, GRAY, etc.)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "vehicleType",
+    "type": "string",
+    "description": "Inventory type (AUTOMOBILE, MOTORCYCLE, etc.)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "vehicleCategory",
+    "type": "string",
+    "description": "Inventory category (VEHICLE, EQUIPMENT, etc.)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "vehicleClass",
+    "type": "string",
+    "description": "Vehicle class (Sedan, Truck, SUV, Coupe, etc.)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "inventoryStatus",
+    "type": "string",
+    "description": "Inventory status code (RS = Ready for Sale)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "interiorColor",
+    "type": "string",
+    "description": "Interior color",
+    "fillRate": 22,
+    "premium": false
+  },
+  {
+    "name": "engine",
+    "type": "string",
+    "description": "Engine description (e.g., \"5.3L V-8 285HP\")",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "cylinders",
+    "type": "float",
+    "description": "Number of engine cylinders",
+    "fillRate": 98,
+    "premium": false
+  },
+  {
+    "name": "transmission",
+    "type": "string",
+    "description": "Transmission type (Automatic, Manual, Unknown)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "drivetrain",
+    "type": "string",
+    "description": "Drivetrain type (FWD, RWD, 4x4, AWD)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "fuelType",
+    "type": "string",
+    "description": "Fuel type (Gasoline, Diesel, Electric, Hybrid, FlexibleFuel)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "hybridIndicator",
+    "type": "bool",
+    "description": "Whether vehicle is a hybrid",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "primaryDamage",
+    "type": "string",
+    "description": "Primary damage (FRONT END, REAR, LEFT SIDE, etc.)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "primaryDamageCode",
+    "type": "string",
+    "description": "Primary damage code (F, R, LF, RF, etc.)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "secondaryDamage",
+    "type": "string",
+    "description": "Secondary damage description",
+    "fillRate": 49,
+    "premium": false
+  },
+  {
+    "name": "secondaryDamageCode",
+    "type": "string",
+    "description": "Secondary damage code",
+    "fillRate": 49,
+    "premium": false
+  },
+  {
+    "name": "lossType",
+    "type": "string",
+    "description": "Loss type (Collision, Theft, Fire, Water, Other)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "lossTypeCode",
+    "type": "string",
+    "description": "Loss type code (0=Collision, 1=Fire, 2=Other, 3=Theft, 4=Water)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "titleType",
+    "type": "string",
+    "description": "Title document type (BillOfSale, Certificate, etc.)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "titleCode",
+    "type": "string",
+    "description": "Title code (SAL=Salvage, CLR=Clear, ORG=Original, BOS=Bill of Sale, NRP=Non-Repairable, JNK=Junk)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "titleBrand",
+    "type": "string",
+    "description": "Title brand (REBUILT, REPAIRABLE, REPOSSESSED, etc.)",
+    "fillRate": 10,
+    "premium": false
+  },
+  {
+    "name": "titleState",
+    "type": "string",
+    "description": "State where title is held (e.g., TX, CA, FL)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "titleNotes",
+    "type": "string",
+    "description": "Additional title notes/conditions",
+    "fillRate": 10,
+    "premium": false
+  },
+  {
+    "name": "tboIndicator",
+    "type": "bool",
+    "description": "Title Buyer Only - requires special buyer license",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "hasKeys",
+    "type": "bool",
+    "description": "Whether keys are present",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "runAndDrive",
+    "type": "bool",
+    "description": "Whether vehicle runs and drives - critical for buyers",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "startsDesc",
+    "type": "string",
+    "description": "Start condition (Starts, Stationary)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "mileage",
+    "type": "float",
+    "description": "Odometer reading in miles",
+    "fillRate": 93,
+    "premium": false
+  },
+  {
+    "name": "odometerBrand",
+    "type": "string",
+    "description": "Odometer status (ACTUAL, NOT ACTUAL, NOT REQUIRED/EXEMPT, EXCEEDS MECHANICAL LIMITS, MISSING)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "odometerUnit",
+    "type": "string",
+    "description": "Odometer unit of measure (mi, km)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "airbagState",
+    "type": "string",
+    "description": "Airbag condition (Intact, Deployed, Missing, None)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "vehicleGrade",
+    "type": "float",
+    "description": "Vehicle condition grade (0-100 scale)",
+    "fillRate": 91,
+    "premium": false
+  },
+  {
+    "name": "vehicleCondition",
+    "type": "string",
+    "description": "Overall condition (Complete, Partially Dismantled, Body Only, Frame Only)",
+    "fillRate": 21,
+    "premium": false
+  },
+  {
+    "name": "catalyticConverter",
+    "type": "string",
+    "description": "Catalytic converter status (Present, Missing) - theft indicator",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "battery",
+    "type": "string",
+    "description": "Battery status (Present, Missing, etc.)",
+    "fillRate": 21,
+    "premium": false
+  },
+  {
+    "name": "radiator",
+    "type": "string",
+    "description": "Radiator status (Present, Missing, Damaged)",
+    "fillRate": 21,
+    "premium": false
+  },
+  {
+    "name": "crExists",
+    "type": "bool",
+    "description": "Whether condition report exists",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "buyNowPrice",
+    "type": "float",
+    "description": "Buy Now price in USD",
+    "fillRate": 100,
+    "premium": true
+  },
+  {
+    "name": "minimumBidAmount",
+    "type": "float",
+    "description": "Minimum bid amount in USD",
+    "fillRate": 100,
+    "premium": true
+  },
+  {
+    "name": "estimatedRepairCost",
+    "type": "float",
+    "description": "Estimated repair cost in USD",
+    "fillRate": 100,
+    "premium": true
+  },
+  {
+    "name": "auctionDateTime",
+    "type": "datetime",
+    "description": "Scheduled auction date and time",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "timedAuctionIndicator",
+    "type": "bool",
+    "description": "Whether this is a timed/online auction",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "buyNowIndicator",
+    "type": "bool",
+    "description": "Whether Buy Now is available",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "currencyCode",
+    "type": "string",
+    "description": "Currency code for prices (USD, CAD, etc.)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "branchNumber",
+    "type": "string",
+    "description": "IAA branch/facility number",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "branchName",
+    "type": "string",
+    "description": "IAA branch/facility name (e.g., \"Salt Lake City (UT)\")",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "branchState",
+    "type": "string",
+    "description": "Branch state code",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "branchLink",
+    "type": "string",
+    "description": "Branch link identifier (e.g., \"342~US\")",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "locationName",
+    "type": "string",
+    "description": "Storage location name",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "locationAddress",
+    "type": "string",
+    "description": "Storage location street address",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "locationCity",
+    "type": "string",
+    "description": "Storage location city",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "locationState",
+    "type": "string",
+    "description": "Storage location state",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "locationZip",
+    "type": "string",
+    "description": "Storage location ZIP code",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "locationPhone",
+    "type": "string",
+    "description": "Storage location phone number",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "locationLatitude",
+    "type": "float",
+    "description": "Storage location latitude (for shipping cost calculations)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "locationLongitude",
+    "type": "float",
+    "description": "Storage location longitude (for shipping cost calculations)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "isOffsite",
+    "type": "bool",
+    "description": "Whether vehicle is stored offsite",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "aisle",
+    "type": "string",
+    "description": "Storage aisle location",
+    "fillRate": 92,
+    "premium": false
+  },
+  {
+    "name": "stall",
+    "type": "string",
+    "description": "Storage stall number",
+    "fillRate": 92,
+    "premium": false
+  },
+  {
+    "name": "sellerName",
+    "type": "string",
+    "description": "Seller/provider name",
+    "fillRate": 84,
+    "premium": true
+  },
+  {
+    "name": "providerType",
+    "type": "string",
+    "description": "Provider type (INS=Insurance, RCC=Remarketing, DLR=Dealer, COR=Corporate, SDS=Specialty, SAL=Salvage, ADJ=Adjuster, GOV=Government, FIN=Finance)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "origin",
+    "type": "string",
+    "description": "Vehicle origin (Insurance, Repossession, Remarketing Vehicles, Donation, IAA Purchase, Lease/Rental)",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "countryOfOrigin",
+    "type": "string",
+    "description": "Country where vehicle was manufactured",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "whoCanBuy",
+    "type": "string",
+    "description": "Buyer type codes (DEA=Dealer, DIS=Dismantler, EXP=Exporter, REB=Rebuilder, PUB=Public, etc.)",
+    "fillRate": 63,
+    "premium": false
+  },
+  {
+    "name": "catIndicator",
+    "type": "bool",
+    "description": "Catastrophe/flood vehicle indicator - important disclosure",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "imageUrl",
+    "type": "string",
+    "description": "Main image URL",
+    "fillRate": 92,
+    "premium": true
+  },
+  {
+    "name": "image360Url",
+    "type": "string",
+    "description": "360-degree view URL",
+    "fillRate": 68,
+    "premium": true
+  },
+  {
+    "name": "updatedAt",
+    "type": "datetime",
+    "description": "Timestamp when IAA last updated the listing",
+    "fillRate": 100,
+    "premium": false
+  },
+  {
+    "name": "listingUrl",
+    "type": "string",
+    "description": "Full URL to the IAA vehicle listing page",
+    "fillRate": 100,
+    "premium": true
+  }
+]
