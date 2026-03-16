@@ -507,7 +507,7 @@
     "name": "stall",
     "type": "string",
     "description": "Storage stall number",
-    "fillRate": 92,
+    "fillRate": 93,
     "premium": false
   },
   {
@@ -542,7 +542,7 @@
     "name": "whoCanBuy",
     "type": "string",
     "description": "Buyer type codes (DEA=Dealer, DIS=Dismantler, EXP=Exporter, REB=Rebuilder, PUB=Public, etc.)",
-    "fillRate": 65,
+    "fillRate": 66,
     "premium": false
   },
   {
