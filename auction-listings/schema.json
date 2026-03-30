@@ -318,7 +318,7 @@
     "name": "vehicleGrade",
     "type": "float",
     "description": "Vehicle condition grade (0-100 scale)",
-    "fillRate": 91,
+    "fillRate": 92,
     "premium": false
   },
   {
@@ -514,7 +514,7 @@
     "name": "sellerName",
     "type": "string",
     "description": "Seller/provider name",
-    "fillRate": 84,
+    "fillRate": 83,
     "premium": true
   },
   {
@@ -556,7 +556,7 @@
     "name": "imageUrl",
     "type": "string",
     "description": "Main image URL",
-    "fillRate": 92,
+    "fillRate": 93,
     "premium": true
   },
   {
