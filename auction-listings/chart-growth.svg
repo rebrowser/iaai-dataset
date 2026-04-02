@@ -54,7 +54,7 @@
           rx="1" fill="#22c55eb3" />
   <rect x="762" y="196" width="37" height="44"
           rx="1" fill="#22c55eb3" />
-  <rect x="801" y="220" width="37" height="20"
+  <rect x="801" y="219" width="37" height="21"
           rx="1" fill="#22c55eb3" />
   <!-- line (Total, left axis) -->
   <polyline points="78,240 117,240 156,238 195,214 234,201 273,188 312,180 351,176 390,153 429,141 468,132 507,119 546,110 585,97 624,89 663,77 702,71 741,59 780,53 819,50" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
