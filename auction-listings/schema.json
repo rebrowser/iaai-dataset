@@ -136,7 +136,7 @@
     "name": "interiorColor",
     "type": "string",
     "description": "Interior color",
-    "fillRate": 22,
+    "fillRate": 21,
     "premium": false
   },
   {
@@ -318,7 +318,7 @@
     "name": "vehicleGrade",
     "type": "float",
     "description": "Vehicle condition grade (0-100 scale)",
-    "fillRate": 92,
+    "fillRate": 91,
     "premium": false
   },
   {
@@ -542,7 +542,7 @@
     "name": "whoCanBuy",
     "type": "string",
     "description": "Buyer type codes (DEA=Dealer, DIS=Dismantler, EXP=Exporter, REB=Rebuilder, PUB=Public, etc.)",
-    "fillRate": 65,
+    "fillRate": 64,
     "premium": false
   },
   {
@@ -556,7 +556,7 @@
     "name": "imageUrl",
     "type": "string",
     "description": "Main image URL",
-    "fillRate": 93,
+    "fillRate": 92,
     "premium": true
   },
   {
