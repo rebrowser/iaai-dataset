@@ -290,7 +290,7 @@
     "name": "mileage",
     "type": "float",
     "description": "Odometer reading in miles",
-    "fillRate": 93,
+    "fillRate": 94,
     "premium": false
   },
   {
@@ -318,14 +318,14 @@
     "name": "vehicleGrade",
     "type": "float",
     "description": "Vehicle condition grade (0-100 scale)",
-    "fillRate": 91,
+    "fillRate": 92,
     "premium": false
   },
   {
     "name": "vehicleCondition",
     "type": "string",
     "description": "Overall condition (Complete, Partially Dismantled, Body Only, Frame Only)",
-    "fillRate": 21,
+    "fillRate": 20,
     "premium": false
   },
   {
@@ -556,7 +556,7 @@
     "name": "imageUrl",
     "type": "string",
     "description": "Main image URL",
-    "fillRate": 92,
+    "fillRate": 93,
     "premium": true
   },
   {
