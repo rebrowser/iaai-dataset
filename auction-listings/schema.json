@@ -241,7 +241,7 @@
     "name": "titleBrand",
     "type": "string",
     "description": "Title brand (REBUILT, REPAIRABLE, REPOSSESSED, etc.)",
-    "fillRate": 10,
+    "fillRate": 11,
     "premium": false
   },
   {
@@ -507,7 +507,7 @@
     "name": "stall",
     "type": "string",
     "description": "Storage stall number",
-    "fillRate": 93,
+    "fillRate": 94,
     "premium": false
   },
   {
@@ -542,7 +542,7 @@
     "name": "whoCanBuy",
     "type": "string",
     "description": "Buyer type codes (DEA=Dealer, DIS=Dismantler, EXP=Exporter, REB=Rebuilder, PUB=Public, etc.)",
-    "fillRate": 66,
+    "fillRate": 67,
     "premium": false
   },
   {
