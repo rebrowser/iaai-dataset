@@ -255,7 +255,7 @@
     "name": "titleNotes",
     "type": "string",
     "description": "Additional title notes/conditions",
-    "fillRate": 10,
+    "fillRate": 11,
     "premium": false
   },
   {
@@ -318,7 +318,7 @@
     "name": "vehicleGrade",
     "type": "float",
     "description": "Vehicle condition grade (0-100 scale)",
-    "fillRate": 92,
+    "fillRate": 93,
     "premium": false
   },
   {
@@ -339,14 +339,14 @@
     "name": "battery",
     "type": "string",
     "description": "Battery status (Present, Missing, etc.)",
-    "fillRate": 21,
+    "fillRate": 20,
     "premium": false
   },
   {
     "name": "radiator",
     "type": "string",
     "description": "Radiator status (Present, Missing, Damaged)",
-    "fillRate": 21,
+    "fillRate": 20,
     "premium": false
   },
   {
@@ -514,7 +514,7 @@
     "name": "sellerName",
     "type": "string",
     "description": "Seller/provider name",
-    "fillRate": 83,
+    "fillRate": 84,
     "premium": true
   },
   {
@@ -542,7 +542,7 @@
     "name": "whoCanBuy",
     "type": "string",
     "description": "Buyer type codes (DEA=Dealer, DIS=Dismantler, EXP=Exporter, REB=Rebuilder, PUB=Public, etc.)",
-    "fillRate": 67,
+    "fillRate": 69,
     "premium": false
   },
   {
@@ -556,14 +556,14 @@
     "name": "imageUrl",
     "type": "string",
     "description": "Main image URL",
-    "fillRate": 93,
+    "fillRate": 94,
     "premium": true
   },
   {
     "name": "image360Url",
     "type": "string",
     "description": "360-degree view URL",
-    "fillRate": 68,
+    "fillRate": 67,
     "premium": true
   },
   {
