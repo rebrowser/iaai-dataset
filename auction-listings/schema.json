@@ -199,14 +199,14 @@
     "name": "secondaryDamage",
     "type": "string",
     "description": "Secondary damage description",
-    "fillRate": 50,
+    "fillRate": 51,
     "premium": false
   },
   {
     "name": "secondaryDamageCode",
     "type": "string",
     "description": "Secondary damage code",
-    "fillRate": 50,
+    "fillRate": 51,
     "premium": false
   },
   {
@@ -290,7 +290,7 @@
     "name": "mileage",
     "type": "float",
     "description": "Odometer reading in miles",
-    "fillRate": 94,
+    "fillRate": 95,
     "premium": false
   },
   {
@@ -542,7 +542,7 @@
     "name": "whoCanBuy",
     "type": "string",
     "description": "Buyer type codes (DEA=Dealer, DIS=Dismantler, EXP=Exporter, REB=Rebuilder, PUB=Public, etc.)",
-    "fillRate": 69,
+    "fillRate": 71,
     "premium": false
   },
   {
@@ -563,7 +563,7 @@
     "name": "image360Url",
     "type": "string",
     "description": "360-degree view URL",
-    "fillRate": 67,
+    "fillRate": 68,
     "premium": true
   },
   {
