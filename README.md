@@ -1,6 +1,6 @@
 # IAAI Insurance Auto Auction Dataset
 
-![Updated](https://img.shields.io/badge/updated-2026--06--02-brightgreen?style=flat-square)&nbsp;![Records](https://img.shields.io/badge/records-645k-blue?style=flat-square)&nbsp;[![Rebrowser](https://img.shields.io/badge/full%20dataset-rebrowser.net-orange?style=flat-square)](https://rebrowser.net/products/datasets/iaai)
+![Updated](https://img.shields.io/badge/updated-2026--06--03-brightgreen?style=flat-square)&nbsp;![Records](https://img.shields.io/badge/records-661k-blue?style=flat-square)&nbsp;[![Rebrowser](https://img.shields.io/badge/full%20dataset-rebrowser.net-orange?style=flat-square)](https://rebrowser.net/products/datasets/iaai)
 
 Daily sample of IAAI insurance auto auction lots with damage assessments, title status, bidding data, and branch locations across North America.
 
@@ -21,7 +21,7 @@ IAAI insurance auto auction lots with vehicle specs, damage classifications, los
 
 
 
-> **645,154** total records from 2025-11-16 to 2026-05-31, **up to 30,000** rows in this sample (4.7% of full dataset).
+> **660,726** total records from 2025-11-16 to 2026-05-31, **up to 30,000** rows in this sample (4.5% of full dataset).
 > Exported as one file per day, up to 1,000 rows each, last 30 days retained.
 
 ![Data Growth](auction-listings/chart-growth.svg)
@@ -99,13 +99,13 @@ IAAI insurance auto auction lots with vehicle specs, damage classifications, los
 | `locationLatitude` | `float` | 100% | Storage location latitude (for shipping cost calculations) |
 | `locationLongitude` | `float` | 100% | Storage location longitude (for shipping cost calculations) |
 | `isOffsite` | `bool` | 100% | Whether vehicle is stored offsite |
-| `aisle` | `string` | 94% | Storage aisle location |
+| `aisle` | `string` | 95% | Storage aisle location |
 | `stall` | `string` | 94% | Storage stall number |
 | `sellerName` 🔒 | `string` | 85% | Seller/provider name |
 | `providerType` | `string` | 100% | Provider type (INS=Insurance, RCC=Remarketing, DLR=Dealer, COR=Corporate, SDS=Specialty, SAL=Salvage, ADJ=Adjuster, GOV=Government, FIN=Finance) |
 | `origin` | `string` | 100% | Vehicle origin (Insurance, Repossession, Remarketing Vehicles, Donation, IAA Purchase, Lease/Rental) |
 | `countryOfOrigin` | `string` | 100% | Country where vehicle was manufactured |
-| `whoCanBuy` | `string` | 71% | Buyer type codes (DEA=Dealer, DIS=Dismantler, EXP=Exporter, REB=Rebuilder, PUB=Public, etc.) |
+| `whoCanBuy` | `string` | 72% | Buyer type codes (DEA=Dealer, DIS=Dismantler, EXP=Exporter, REB=Rebuilder, PUB=Public, etc.) |
 | `catIndicator` | `bool` | 100% | Catastrophe/flood vehicle indicator - important disclosure |
 | `imageUrl` 🔒 | `string` | 94% | Main image URL |
 | `image360Url` 🔒 | `string` | 68% | 360-degree view URL |
@@ -127,11 +127,11 @@ IAAI insurance auto auction lots with vehicle specs, damage classifications, los
 
 | Value | Count | Share |
 | --- | --- | --- |
-| Collision | 434,226 | `█████████████░░░░░░░` 67.3% |
-| Other | 192,810 | `██████░░░░░░░░░░░░░░` 29.9% |
-| Theft | 10,031 | `░░░░░░░░░░░░░░░░░░░░` 1.6% |
-| Fire | 5,114 | `░░░░░░░░░░░░░░░░░░░░` 0.8% |
-| Water | 2,973 | `░░░░░░░░░░░░░░░░░░░░` 0.5% |
+| Collision | 444,628 | `█████████████░░░░░░░` 67.3% |
+| Other | 197,650 | `██████░░░░░░░░░░░░░░` 29.9% |
+| Theft | 10,202 | `░░░░░░░░░░░░░░░░░░░░` 1.5% |
+| Fire | 5,218 | `░░░░░░░░░░░░░░░░░░░░` 0.8% |
+| Water | 3,028 | `░░░░░░░░░░░░░░░░░░░░` 0.5% |
 
 </details>
 
@@ -142,16 +142,16 @@ IAAI insurance auto auction lots with vehicle specs, damage classifications, los
 
 | Value | Count | Share |
 | --- | --- | --- |
-| FRONT END | 219,438 | `████████░░░░░░░░░░░░` 39.0% |
-| NORMAL WEAR & TEAR | 58,258 | `██░░░░░░░░░░░░░░░░░░` 10.4% |
-| REAR | 55,963 | `██░░░░░░░░░░░░░░░░░░` 10.0% |
-| LEFT SIDE | 44,120 | `██░░░░░░░░░░░░░░░░░░` 7.8% |
-| RIGHT SIDE | 41,819 | `█░░░░░░░░░░░░░░░░░░░` 7.4% |
-| RIGHT FRONT | 36,293 | `█░░░░░░░░░░░░░░░░░░░` 6.5% |
-| LEFT FRONT | 36,142 | `█░░░░░░░░░░░░░░░░░░░` 6.4% |
-| FRONT & REAR | 31,977 | `█░░░░░░░░░░░░░░░░░░░` 5.7% |
-| UNKNOWN | 21,302 | `█░░░░░░░░░░░░░░░░░░░` 3.8% |
-| LEFT REAR | 16,862 | `█░░░░░░░░░░░░░░░░░░░` 3.0% |
+| FRONT END | 224,408 | `████████░░░░░░░░░░░░` 39.0% |
+| NORMAL WEAR & TEAR | 61,211 | `██░░░░░░░░░░░░░░░░░░` 10.6% |
+| REAR | 57,275 | `██░░░░░░░░░░░░░░░░░░` 9.9% |
+| LEFT SIDE | 45,073 | `██░░░░░░░░░░░░░░░░░░` 7.8% |
+| RIGHT SIDE | 42,759 | `█░░░░░░░░░░░░░░░░░░░` 7.4% |
+| RIGHT FRONT | 37,108 | `█░░░░░░░░░░░░░░░░░░░` 6.4% |
+| LEFT FRONT | 36,917 | `█░░░░░░░░░░░░░░░░░░░` 6.4% |
+| FRONT & REAR | 32,581 | `█░░░░░░░░░░░░░░░░░░░` 5.7% |
+| UNKNOWN | 21,489 | `█░░░░░░░░░░░░░░░░░░░` 3.7% |
+| LEFT REAR | 17,184 | `█░░░░░░░░░░░░░░░░░░░` 3.0% |
 
 </details>
 
@@ -162,16 +162,16 @@ IAAI insurance auto auction lots with vehicle specs, damage classifications, los
 
 | Value | Count | Share |
 | --- | --- | --- |
-| Sedan | 377,622 | `████████████░░░░░░░░` 60.1% |
-| Truck | 109,859 | `███░░░░░░░░░░░░░░░░░` 17.5% |
-| Hatchback | 41,982 | `█░░░░░░░░░░░░░░░░░░░` 6.7% |
-| SUV/Crossover | 33,356 | `█░░░░░░░░░░░░░░░░░░░` 5.3% |
-| Coupe | 27,413 | `█░░░░░░░░░░░░░░░░░░░` 4.4% |
-| Sedan/Hatchback | 12,846 | `░░░░░░░░░░░░░░░░░░░░` 2.0% |
-| Convertible | 8,442 | `░░░░░░░░░░░░░░░░░░░░` 1.3% |
-| Hatchback/Crossover | 7,407 | `░░░░░░░░░░░░░░░░░░░░` 1.2% |
-| SUV | 4,729 | `░░░░░░░░░░░░░░░░░░░░` 0.8% |
-| Wagon | 4,546 | `░░░░░░░░░░░░░░░░░░░░` 0.7% |
+| Sedan | 382,388 | `████████████░░░░░░░░` 59.5% |
+| Truck | 111,072 | `███░░░░░░░░░░░░░░░░░` 17.3% |
+| Hatchback | 42,490 | `█░░░░░░░░░░░░░░░░░░░` 6.6% |
+| SUV/Crossover | 39,724 | `█░░░░░░░░░░░░░░░░░░░` 6.2% |
+| Coupe | 27,762 | `█░░░░░░░░░░░░░░░░░░░` 4.3% |
+| Sedan/Hatchback | 12,993 | `░░░░░░░░░░░░░░░░░░░░` 2.0% |
+| Convertible | 8,554 | `░░░░░░░░░░░░░░░░░░░░` 1.3% |
+| Hatchback/Crossover | 7,504 | `░░░░░░░░░░░░░░░░░░░░` 1.2% |
+| SUV | 5,551 | `░░░░░░░░░░░░░░░░░░░░` 0.9% |
+| Wagon | 4,621 | `░░░░░░░░░░░░░░░░░░░░` 0.7% |
 
 </details>
 
@@ -182,13 +182,13 @@ IAAI insurance auto auction lots with vehicle specs, damage classifications, los
 
 | Value | Count | Share |
 | --- | --- | --- |
-| OTH | 256,104 | `████████░░░░░░░░░░░░` 39.7% |
-| SAL | 227,277 | `███████░░░░░░░░░░░░░` 35.2% |
-| CLR | 109,169 | `███░░░░░░░░░░░░░░░░░` 16.9% |
-| ORG | 36,639 | `█░░░░░░░░░░░░░░░░░░░` 5.7% |
-| BOS | 12,526 | `░░░░░░░░░░░░░░░░░░░░` 1.9% |
-| NRP | 2,289 | `░░░░░░░░░░░░░░░░░░░░` 0.4% |
-| JNK | 1,150 | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
+| OTH | 258,428 | `████████░░░░░░░░░░░░` 39.1% |
+| SAL | 235,316 | `███████░░░░░░░░░░░░░` 35.6% |
+| CLR | 112,859 | `███░░░░░░░░░░░░░░░░░` 17.1% |
+| ORG | 37,626 | `█░░░░░░░░░░░░░░░░░░░` 5.7% |
+| BOS | 12,970 | `░░░░░░░░░░░░░░░░░░░░` 2.0% |
+| NRP | 2,342 | `░░░░░░░░░░░░░░░░░░░░` 0.4% |
+| JNK | 1,185 | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
 
 </details>
 
@@ -199,12 +199,12 @@ IAAI insurance auto auction lots with vehicle specs, damage classifications, los
 
 | Value | Count | Share |
 | --- | --- | --- |
-| Insurance | 476,484 | `███████████████░░░░░` 73.9% |
-| Remarketing Vehicles | 113,019 | `████░░░░░░░░░░░░░░░░` 17.5% |
-| Repossession | 29,433 | `█░░░░░░░░░░░░░░░░░░░` 4.6% |
-| Donation | 14,580 | `░░░░░░░░░░░░░░░░░░░░` 2.3% |
-| IAA Purchase | 5,834 | `░░░░░░░░░░░░░░░░░░░░` 0.9% |
-| Lease/Rental | 5,696 | `░░░░░░░░░░░░░░░░░░░░` 0.9% |
+| Insurance | 487,979 | `███████████████░░░░░` 73.9% |
+| Remarketing Vehicles | 116,304 | `████░░░░░░░░░░░░░░░░` 17.6% |
+| Repossession | 29,732 | `█░░░░░░░░░░░░░░░░░░░` 4.5% |
+| Donation | 15,024 | `░░░░░░░░░░░░░░░░░░░░` 2.3% |
+| IAA Purchase | 5,875 | `░░░░░░░░░░░░░░░░░░░░` 0.9% |
+| Lease/Rental | 5,704 | `░░░░░░░░░░░░░░░░░░░░` 0.9% |
 |   | 108 | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
 
 </details>
@@ -216,16 +216,16 @@ IAAI insurance auto auction lots with vehicle specs, damage classifications, los
 
 | Value | Count | Share |
 | --- | --- | --- |
-| CA | 80,649 | `████░░░░░░░░░░░░░░░░` 21.1% |
-| TX | 75,975 | `████░░░░░░░░░░░░░░░░` 19.9% |
-| GA | 34,496 | `██░░░░░░░░░░░░░░░░░░` 9.0% |
-| FL | 33,774 | `██░░░░░░░░░░░░░░░░░░` 8.8% |
-| NC | 32,548 | `██░░░░░░░░░░░░░░░░░░` 8.5% |
-| NY | 29,780 | `██░░░░░░░░░░░░░░░░░░` 7.8% |
-| OH | 28,980 | `██░░░░░░░░░░░░░░░░░░` 7.6% |
-| IL | 24,195 | `█░░░░░░░░░░░░░░░░░░░` 6.3% |
-| VA | 21,429 | `█░░░░░░░░░░░░░░░░░░░` 5.6% |
-| PA | 20,081 | `█░░░░░░░░░░░░░░░░░░░` 5.3% |
+| CA | 82,238 | `████░░░░░░░░░░░░░░░░` 21.1% |
+| TX | 77,858 | `████░░░░░░░░░░░░░░░░` 19.9% |
+| GA | 35,428 | `██░░░░░░░░░░░░░░░░░░` 9.1% |
+| FL | 34,388 | `██░░░░░░░░░░░░░░░░░░` 8.8% |
+| NC | 33,465 | `██░░░░░░░░░░░░░░░░░░` 8.6% |
+| NY | 30,563 | `██░░░░░░░░░░░░░░░░░░` 7.8% |
+| OH | 29,536 | `██░░░░░░░░░░░░░░░░░░` 7.6% |
+| IL | 24,708 | `█░░░░░░░░░░░░░░░░░░░` 6.3% |
+| VA | 21,832 | `█░░░░░░░░░░░░░░░░░░░` 5.6% |
+| PA | 20,608 | `█░░░░░░░░░░░░░░░░░░░` 5.3% |
 
 </details>
 

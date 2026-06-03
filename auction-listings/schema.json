@@ -500,7 +500,7 @@
     "name": "aisle",
     "type": "string",
     "description": "Storage aisle location",
-    "fillRate": 94,
+    "fillRate": 95,
     "premium": false
   },
   {
@@ -542,7 +542,7 @@
     "name": "whoCanBuy",
     "type": "string",
     "description": "Buyer type codes (DEA=Dealer, DIS=Dismantler, EXP=Exporter, REB=Rebuilder, PUB=Public, etc.)",
-    "fillRate": 71,
+    "fillRate": 72,
     "premium": false
   },
   {
