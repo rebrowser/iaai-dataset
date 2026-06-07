@@ -507,7 +507,7 @@
     "name": "stall",
     "type": "string",
     "description": "Storage stall number",
-    "fillRate": 94,
+    "fillRate": 95,
     "premium": false
   },
   {
