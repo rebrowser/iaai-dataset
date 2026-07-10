@@ -1,6 +1,6 @@
 # IAAI Insurance Auto Auction Dataset
 
-![Updated](https://img.shields.io/badge/updated-2026--07--09-brightgreen?style=flat-square)&nbsp;![Records](https://img.shields.io/badge/records-668k-blue?style=flat-square)&nbsp;[![Rebrowser](https://img.shields.io/badge/full%20dataset-rebrowser.net-orange?style=flat-square)](https://rebrowser.net/products/datasets/iaai)
+![Updated](https://img.shields.io/badge/updated-2026--07--10-brightgreen?style=flat-square)&nbsp;![Records](https://img.shields.io/badge/records-836k-blue?style=flat-square)&nbsp;[![Rebrowser](https://img.shields.io/badge/full%20dataset-rebrowser.net-orange?style=flat-square)](https://rebrowser.net/products/datasets/iaai)
 
 Daily sample of IAAI insurance auto auction lots with damage assessments, title status, bidding data, and branch locations across North America.
 
@@ -21,7 +21,7 @@ IAAI insurance auto auction lots with vehicle specs, damage classifications, los
 
 
 
-> **667,681** total records from 2025-11-16 to 2026-05-31, **up to 30,000** rows in this sample (4.5% of full dataset).
+> **835,895** total records from 2025-11-16 to 2026-07-05, **up to 30,000** rows in this sample (3.6% of full dataset).
 > Exported as one file per day, up to 1,000 rows each, last 30 days retained.
 
 ![Data Growth](auction-listings/chart-growth.svg)
@@ -47,7 +47,7 @@ IAAI insurance auto auction lots with vehicle specs, damage classifications, los
 | `vehicleCategory` | `string` | 100% | Inventory category (VEHICLE, EQUIPMENT, etc.) |
 | `vehicleClass` | `string` | 100% | Vehicle class (Sedan, Truck, SUV, Coupe, etc.) |
 | `inventoryStatus` | `string` | 100% | Inventory status code (RS = Ready for Sale) |
-| `interiorColor` | `string` | 21% | Interior color |
+| `interiorColor` | `string` | 20% | Interior color |
 | `engine` | `string` | 100% | Engine description (e.g., "5.3L V-8 285HP") |
 | `cylinders` | `float` | 98% | Number of engine cylinders |
 | `transmission` | `string` | 100% | Transmission type (Automatic, Manual, Unknown) |
@@ -62,18 +62,18 @@ IAAI insurance auto auction lots with vehicle specs, damage classifications, los
 | `lossTypeCode` | `string` | 100% | Loss type code (0=Collision, 1=Fire, 2=Other, 3=Theft, 4=Water) |
 | `titleType` | `string` | 100% | Title document type (BillOfSale, Certificate, etc.) |
 | `titleCode` | `string` | 100% | Title code (SAL=Salvage, CLR=Clear, ORG=Original, BOS=Bill of Sale, NRP=Non-Repairable, JNK=Junk) |
-| `titleBrand` | `string` | 11% | Title brand (REBUILT, REPAIRABLE, REPOSSESSED, etc.) |
+| `titleBrand` | `string` | 12% | Title brand (REBUILT, REPAIRABLE, REPOSSESSED, etc.) |
 | `titleState` | `string` | 100% | State where title is held (e.g., TX, CA, FL) |
-| `titleNotes` | `string` | 11% | Additional title notes/conditions |
+| `titleNotes` | `string` | 12% | Additional title notes/conditions |
 | `tboIndicator` | `bool` | 100% | Title Buyer Only - requires special buyer license |
 | `hasKeys` | `bool` | 100% | Whether keys are present |
 | `runAndDrive` | `bool` | 100% | Whether vehicle runs and drives - critical for buyers |
 | `startsDesc` | `string` | 100% | Start condition (Starts, Stationary) |
-| `mileage` | `float` | 95% | Odometer reading in miles |
+| `mileage` | `float` | 96% | Odometer reading in miles |
 | `odometerBrand` | `string` | 100% | Odometer status (ACTUAL, NOT ACTUAL, NOT REQUIRED/EXEMPT, EXCEEDS MECHANICAL LIMITS, MISSING) |
 | `odometerUnit` | `string` | 100% | Odometer unit of measure (mi, km) |
 | `airbagState` | `string` | 100% | Airbag condition (Intact, Deployed, Missing, None) |
-| `vehicleGrade` | `float` | 93% | Vehicle condition grade (0-100 scale) |
+| `vehicleGrade` | `float` | 94% | Vehicle condition grade (0-100 scale) |
 | `vehicleCondition` | `string` | 20% | Overall condition (Complete, Partially Dismantled, Body Only, Frame Only) |
 | `catalyticConverter` | `string` | 100% | Catalytic converter status (Present, Missing) - theft indicator |
 | `battery` | `string` | 20% | Battery status (Present, Missing, etc.) |
@@ -99,16 +99,16 @@ IAAI insurance auto auction lots with vehicle specs, damage classifications, los
 | `locationLatitude` | `float` | 100% | Storage location latitude (for shipping cost calculations) |
 | `locationLongitude` | `float` | 100% | Storage location longitude (for shipping cost calculations) |
 | `isOffsite` | `bool` | 100% | Whether vehicle is stored offsite |
-| `aisle` | `string` | 95% | Storage aisle location |
-| `stall` | `string` | 95% | Storage stall number |
-| `sellerName` 🔒 | `string` | 85% | Seller/provider name |
+| `aisle` | `string` | 96% | Storage aisle location |
+| `stall` | `string` | 96% | Storage stall number |
+| `sellerName` 🔒 | `string` | 88% | Seller/provider name |
 | `providerType` | `string` | 100% | Provider type (INS=Insurance, RCC=Remarketing, DLR=Dealer, COR=Corporate, SDS=Specialty, SAL=Salvage, ADJ=Adjuster, GOV=Government, FIN=Finance) |
 | `origin` | `string` | 100% | Vehicle origin (Insurance, Repossession, Remarketing Vehicles, Donation, IAA Purchase, Lease/Rental) |
 | `countryOfOrigin` | `string` | 100% | Country where vehicle was manufactured |
-| `whoCanBuy` | `string` | 72% | Buyer type codes (DEA=Dealer, DIS=Dismantler, EXP=Exporter, REB=Rebuilder, PUB=Public, etc.) |
+| `whoCanBuy` | `string` | 78% | Buyer type codes (DEA=Dealer, DIS=Dismantler, EXP=Exporter, REB=Rebuilder, PUB=Public, etc.) |
 | `catIndicator` | `bool` | 100% | Catastrophe/flood vehicle indicator - important disclosure |
-| `imageUrl` 🔒 | `string` | 94% | Main image URL |
-| `image360Url` 🔒 | `string` | 68% | 360-degree view URL |
+| `imageUrl` 🔒 | `string` | 95% | Main image URL |
+| `image360Url` 🔒 | `string` | 69% | 360-degree view URL |
 | `updatedAt` | `datetime` | 100% | Timestamp when IAA last updated the listing |
 | `listingUrl` 🔒 | `string` | 100% | Full URL to the IAA vehicle listing page |
 
@@ -127,11 +127,11 @@ IAAI insurance auto auction lots with vehicle specs, damage classifications, los
 
 | Value | Count | Share |
 | --- | --- | --- |
-| Collision | 448,928 | `█████████████░░░░░░░` 67.2% |
-| Other | 200,119 | `██████░░░░░░░░░░░░░░` 30.0% |
-| Theft | 10,294 | `░░░░░░░░░░░░░░░░░░░░` 1.5% |
-| Fire | 5,269 | `░░░░░░░░░░░░░░░░░░░░` 0.8% |
-| Water | 3,071 | `░░░░░░░░░░░░░░░░░░░░` 0.5% |
+| Collision | 558,890 | `█████████████░░░░░░░` 66.9% |
+| Other | 254,360 | `██████░░░░░░░░░░░░░░` 30.4% |
+| Theft | 12,253 | `░░░░░░░░░░░░░░░░░░░░` 1.5% |
+| Fire | 6,541 | `░░░░░░░░░░░░░░░░░░░░` 0.8% |
+| Water | 3,851 | `░░░░░░░░░░░░░░░░░░░░` 0.5% |
 
 </details>
 
@@ -142,16 +142,16 @@ IAAI insurance auto auction lots with vehicle specs, damage classifications, los
 
 | Value | Count | Share |
 | --- | --- | --- |
-| FRONT END | 226,407 | `████████░░░░░░░░░░░░` 38.9% |
-| NORMAL WEAR & TEAR | 62,842 | `██░░░░░░░░░░░░░░░░░░` 10.8% |
-| REAR | 57,812 | `██░░░░░░░░░░░░░░░░░░` 9.9% |
-| LEFT SIDE | 45,505 | `██░░░░░░░░░░░░░░░░░░` 7.8% |
-| RIGHT SIDE | 43,161 | `█░░░░░░░░░░░░░░░░░░░` 7.4% |
-| RIGHT FRONT | 37,462 | `█░░░░░░░░░░░░░░░░░░░` 6.4% |
-| LEFT FRONT | 37,270 | `█░░░░░░░░░░░░░░░░░░░` 6.4% |
-| FRONT & REAR | 32,804 | `█░░░░░░░░░░░░░░░░░░░` 5.6% |
-| UNKNOWN | 21,559 | `█░░░░░░░░░░░░░░░░░░░` 3.7% |
-| LEFT REAR | 17,327 | `█░░░░░░░░░░░░░░░░░░░` 3.0% |
+| FRONT END | 278,068 | `████████░░░░░░░░░░░░` 38.2% |
+| NORMAL WEAR & TEAR | 94,743 | `███░░░░░░░░░░░░░░░░░` 13.0% |
+| REAR | 71,657 | `██░░░░░░░░░░░░░░░░░░` 9.8% |
+| LEFT SIDE | 55,912 | `██░░░░░░░░░░░░░░░░░░` 7.7% |
+| RIGHT SIDE | 52,723 | `█░░░░░░░░░░░░░░░░░░░` 7.2% |
+| RIGHT FRONT | 46,054 | `█░░░░░░░░░░░░░░░░░░░` 6.3% |
+| LEFT FRONT | 45,599 | `█░░░░░░░░░░░░░░░░░░░` 6.3% |
+| FRONT & REAR | 39,662 | `█░░░░░░░░░░░░░░░░░░░` 5.4% |
+| UNKNOWN | 23,389 | `█░░░░░░░░░░░░░░░░░░░` 3.2% |
+| LEFT REAR | 21,020 | `█░░░░░░░░░░░░░░░░░░░` 2.9% |
 
 </details>
 
@@ -162,16 +162,16 @@ IAAI insurance auto auction lots with vehicle specs, damage classifications, los
 
 | Value | Count | Share |
 | --- | --- | --- |
-| Sedan | 384,583 | `████████████░░░░░░░░` 59.2% |
-| Truck | 111,583 | `███░░░░░░░░░░░░░░░░░` 17.2% |
-| Hatchback | 42,774 | `█░░░░░░░░░░░░░░░░░░░` 6.6% |
-| SUV/Crossover | 42,446 | `█░░░░░░░░░░░░░░░░░░░` 6.5% |
-| Coupe | 27,926 | `█░░░░░░░░░░░░░░░░░░░` 4.3% |
-| Sedan/Hatchback | 13,079 | `░░░░░░░░░░░░░░░░░░░░` 2.0% |
-| Convertible | 8,618 | `░░░░░░░░░░░░░░░░░░░░` 1.3% |
-| Hatchback/Crossover | 7,542 | `░░░░░░░░░░░░░░░░░░░░` 1.2% |
-| SUV | 5,913 | `░░░░░░░░░░░░░░░░░░░░` 0.9% |
-| Wagon | 4,659 | `░░░░░░░░░░░░░░░░░░░░` 0.7% |
+| Sedan | 440,029 | `███████████░░░░░░░░░` 54.3% |
+| Truck | 126,553 | `███░░░░░░░░░░░░░░░░░` 15.6% |
+| SUV/Crossover | 105,145 | `███░░░░░░░░░░░░░░░░░` 13.0% |
+| Hatchback | 49,092 | `█░░░░░░░░░░░░░░░░░░░` 6.1% |
+| Coupe | 31,964 | `█░░░░░░░░░░░░░░░░░░░` 3.9% |
+| Sedan/Hatchback | 14,990 | `░░░░░░░░░░░░░░░░░░░░` 1.8% |
+| SUV | 14,275 | `░░░░░░░░░░░░░░░░░░░░` 1.8% |
+| Convertible | 9,972 | `░░░░░░░░░░░░░░░░░░░░` 1.2% |
+| Minivan | 9,959 | `░░░░░░░░░░░░░░░░░░░░` 1.2% |
+| Hatchback/Crossover | 8,640 | `░░░░░░░░░░░░░░░░░░░░` 1.1% |
 
 </details>
 
@@ -182,13 +182,13 @@ IAAI insurance auto auction lots with vehicle specs, damage classifications, los
 
 | Value | Count | Share |
 | --- | --- | --- |
-| OTH | 259,699 | `████████░░░░░░░░░░░░` 38.9% |
-| SAL | 238,815 | `███████░░░░░░░░░░░░░` 35.8% |
-| CLR | 114,567 | `███░░░░░░░░░░░░░░░░░` 17.2% |
-| ORG | 37,937 | `█░░░░░░░░░░░░░░░░░░░` 5.7% |
-| BOS | 13,094 | `░░░░░░░░░░░░░░░░░░░░` 2.0% |
-| NRP | 2,380 | `░░░░░░░░░░░░░░░░░░░░` 0.4% |
-| JNK | 1,189 | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
+| SAL | 325,136 | `████████░░░░░░░░░░░░` 38.9% |
+| OTH | 284,982 | `███████░░░░░░░░░░░░░` 34.1% |
+| CLR | 153,508 | `████░░░░░░░░░░░░░░░░` 18.4% |
+| ORG | 50,506 | `█░░░░░░░░░░░░░░░░░░░` 6.0% |
+| BOS | 17,137 | `░░░░░░░░░░░░░░░░░░░░` 2.1% |
+| NRP | 3,062 | `░░░░░░░░░░░░░░░░░░░░` 0.4% |
+| JNK | 1,564 | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
 
 </details>
 
@@ -199,12 +199,12 @@ IAAI insurance auto auction lots with vehicle specs, damage classifications, los
 
 | Value | Count | Share |
 | --- | --- | --- |
-| Insurance | 492,880 | `███████████████░░░░░` 73.8% |
-| Remarketing Vehicles | 117,970 | `████░░░░░░░░░░░░░░░░` 17.7% |
-| Repossession | 29,828 | `█░░░░░░░░░░░░░░░░░░░` 4.5% |
-| Donation | 15,293 | `░░░░░░░░░░░░░░░░░░░░` 2.3% |
-| IAA Purchase | 5,898 | `░░░░░░░░░░░░░░░░░░░░` 0.9% |
-| Lease/Rental | 5,704 | `░░░░░░░░░░░░░░░░░░░░` 0.9% |
+| Insurance | 618,079 | `███████████████░░░░░` 73.9% |
+| Remarketing Vehicles | 151,187 | `████░░░░░░░░░░░░░░░░` 18.1% |
+| Repossession | 33,583 | `█░░░░░░░░░░░░░░░░░░░` 4.0% |
+| Donation | 20,799 | `░░░░░░░░░░░░░░░░░░░░` 2.5% |
+| IAA Purchase | 6,410 | `░░░░░░░░░░░░░░░░░░░░` 0.8% |
+| Lease/Rental | 5,729 | `░░░░░░░░░░░░░░░░░░░░` 0.7% |
 |   | 108 | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
 
 </details>
@@ -216,16 +216,16 @@ IAAI insurance auto auction lots with vehicle specs, damage classifications, los
 
 | Value | Count | Share |
 | --- | --- | --- |
-| CA | 83,335 | `████░░░░░░░░░░░░░░░░` 21.1% |
-| TX | 78,410 | `████░░░░░░░░░░░░░░░░` 19.9% |
-| GA | 35,588 | `██░░░░░░░░░░░░░░░░░░` 9.0% |
-| FL | 34,943 | `██░░░░░░░░░░░░░░░░░░` 8.8% |
-| NC | 33,796 | `██░░░░░░░░░░░░░░░░░░` 8.6% |
-| NY | 30,849 | `██░░░░░░░░░░░░░░░░░░` 7.8% |
-| OH | 29,980 | `██░░░░░░░░░░░░░░░░░░` 7.6% |
-| IL | 24,967 | `█░░░░░░░░░░░░░░░░░░░` 6.3% |
-| VA | 22,041 | `█░░░░░░░░░░░░░░░░░░░` 5.6% |
-| PA | 20,959 | `█░░░░░░░░░░░░░░░░░░░` 5.3% |
+| CA | 101,743 | `████░░░░░░░░░░░░░░░░` 20.8% |
+| TX | 96,887 | `████░░░░░░░░░░░░░░░░` 19.8% |
+| FL | 43,365 | `██░░░░░░░░░░░░░░░░░░` 8.9% |
+| GA | 41,798 | `██░░░░░░░░░░░░░░░░░░` 8.5% |
+| NC | 41,276 | `██░░░░░░░░░░░░░░░░░░` 8.4% |
+| NY | 39,578 | `██░░░░░░░░░░░░░░░░░░` 8.1% |
+| OH | 38,425 | `██░░░░░░░░░░░░░░░░░░` 7.9% |
+| IL | 32,287 | `█░░░░░░░░░░░░░░░░░░░` 6.6% |
+| VA | 27,307 | `█░░░░░░░░░░░░░░░░░░░` 5.6% |
+| PA | 26,725 | `█░░░░░░░░░░░░░░░░░░░` 5.5% |
 
 </details>
 
@@ -244,11 +244,11 @@ Rebrowser web viewer lets you filter, sort, and export any slice of this dataset
 ### Auction Listings
 
 
-[Listings with Buy Now Price](https://rebrowser.net/products/datasets/iaai/auction-listings/views/listings-with-buy-now) — 130,607 records
+[Listings with Buy Now Price](https://rebrowser.net/products/datasets/iaai/auction-listings/views/listings-with-buy-now) — 135,240 records
 
 ↳ `[{"field":"buyNowIndicator","op":"isTrue","value":true},{"sort":"buyNowPrice ASC"}]`
 
-[Run and Drive Vehicles](https://rebrowser.net/products/datasets/iaai/auction-listings/views/run-and-drive-vehicles) — 443,147 records
+[Run and Drive Vehicles](https://rebrowser.net/products/datasets/iaai/auction-listings/views/run-and-drive-vehicles) — 514,167 records
 
 ↳ `[{"field":"runAndDrive","op":"isTrue","value":true},{"sort":"_lastSeenAt DESC"}]`
 
@@ -256,11 +256,11 @@ Rebrowser web viewer lets you filter, sort, and export any slice of this dataset
 
 ↳ `[{"field":"lossType","op":"is","value":"Collision"},{"sort":"_lastSeenAt DESC"}]`
 
-[Theft Recovery Vehicles](https://rebrowser.net/products/datasets/iaai/auction-listings/views/theft-recovery-vehicles) — 10,294 records
+[Theft Recovery Vehicles](https://rebrowser.net/products/datasets/iaai/auction-listings/views/theft-recovery-vehicles) — 11,292 records
 
 ↳ `[{"field":"lossType","op":"is","value":"Theft"},{"sort":"_lastSeenAt DESC"}]`
 
-[Insurance Company Listings](https://rebrowser.net/products/datasets/iaai/auction-listings/views/insurance-seller-listings) — 492,880 records
+[Insurance Company Listings](https://rebrowser.net/products/datasets/iaai/auction-listings/views/insurance-seller-listings) — 557,819 records
 
 ↳ `[{"field":"origin","op":"is","value":"Insurance"},{"sort":"_lastSeenAt DESC"}]`
 

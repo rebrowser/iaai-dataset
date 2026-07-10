@@ -136,7 +136,7 @@
     "name": "interiorColor",
     "type": "string",
     "description": "Interior color",
-    "fillRate": 21,
+    "fillRate": 20,
     "premium": false
   },
   {
@@ -241,7 +241,7 @@
     "name": "titleBrand",
     "type": "string",
     "description": "Title brand (REBUILT, REPAIRABLE, REPOSSESSED, etc.)",
-    "fillRate": 11,
+    "fillRate": 12,
     "premium": false
   },
   {
@@ -255,7 +255,7 @@
     "name": "titleNotes",
     "type": "string",
     "description": "Additional title notes/conditions",
-    "fillRate": 11,
+    "fillRate": 12,
     "premium": false
   },
   {
@@ -290,7 +290,7 @@
     "name": "mileage",
     "type": "float",
     "description": "Odometer reading in miles",
-    "fillRate": 95,
+    "fillRate": 96,
     "premium": false
   },
   {
@@ -318,7 +318,7 @@
     "name": "vehicleGrade",
     "type": "float",
     "description": "Vehicle condition grade (0-100 scale)",
-    "fillRate": 93,
+    "fillRate": 94,
     "premium": false
   },
   {
@@ -500,21 +500,21 @@
     "name": "aisle",
     "type": "string",
     "description": "Storage aisle location",
-    "fillRate": 95,
+    "fillRate": 96,
     "premium": false
   },
   {
     "name": "stall",
     "type": "string",
     "description": "Storage stall number",
-    "fillRate": 95,
+    "fillRate": 96,
     "premium": false
   },
   {
     "name": "sellerName",
     "type": "string",
     "description": "Seller/provider name",
-    "fillRate": 85,
+    "fillRate": 88,
     "premium": true
   },
   {
@@ -542,7 +542,7 @@
     "name": "whoCanBuy",
     "type": "string",
     "description": "Buyer type codes (DEA=Dealer, DIS=Dismantler, EXP=Exporter, REB=Rebuilder, PUB=Public, etc.)",
-    "fillRate": 72,
+    "fillRate": 78,
     "premium": false
   },
   {
@@ -556,14 +556,14 @@
     "name": "imageUrl",
     "type": "string",
     "description": "Main image URL",
-    "fillRate": 94,
+    "fillRate": 95,
     "premium": true
   },
   {
     "name": "image360Url",
     "type": "string",
     "description": "360-degree view URL",
-    "fillRate": 68,
+    "fillRate": 69,
     "premium": true
   },
   {
