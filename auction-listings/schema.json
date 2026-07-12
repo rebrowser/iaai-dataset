@@ -199,14 +199,14 @@
     "name": "secondaryDamage",
     "type": "string",
     "description": "Secondary damage description",
-    "fillRate": 51,
+    "fillRate": 52,
     "premium": false
   },
   {
     "name": "secondaryDamageCode",
     "type": "string",
     "description": "Secondary damage code",
-    "fillRate": 51,
+    "fillRate": 52,
     "premium": false
   },
   {
@@ -556,7 +556,7 @@
     "name": "imageUrl",
     "type": "string",
     "description": "Main image URL",
-    "fillRate": 95,
+    "fillRate": 96,
     "premium": true
   },
   {
