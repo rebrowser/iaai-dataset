@@ -318,7 +318,7 @@
     "name": "vehicleGrade",
     "type": "float",
     "description": "Vehicle condition grade (0-100 scale)",
-    "fillRate": 94,
+    "fillRate": 95,
     "premium": false
   },
   {
@@ -514,7 +514,7 @@
     "name": "sellerName",
     "type": "string",
     "description": "Seller/provider name",
-    "fillRate": 88,
+    "fillRate": 89,
     "premium": true
   },
   {
@@ -542,7 +542,7 @@
     "name": "whoCanBuy",
     "type": "string",
     "description": "Buyer type codes (DEA=Dealer, DIS=Dismantler, EXP=Exporter, REB=Rebuilder, PUB=Public, etc.)",
-    "fillRate": 78,
+    "fillRate": 79,
     "premium": false
   },
   {
@@ -563,7 +563,7 @@
     "name": "image360Url",
     "type": "string",
     "description": "360-degree view URL",
-    "fillRate": 69,
+    "fillRate": 70,
     "premium": true
   },
   {
