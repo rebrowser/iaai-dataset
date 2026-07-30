@@ -514,7 +514,7 @@
     "name": "sellerName",
     "type": "string",
     "description": "Seller/provider name",
-    "fillRate": 89,
+    "fillRate": 90,
     "premium": true
   },
   {
@@ -542,7 +542,7 @@
     "name": "whoCanBuy",
     "type": "string",
     "description": "Buyer type codes (DEA=Dealer, DIS=Dismantler, EXP=Exporter, REB=Rebuilder, PUB=Public, etc.)",
-    "fillRate": 79,
+    "fillRate": 80,
     "premium": false
   },
   {
