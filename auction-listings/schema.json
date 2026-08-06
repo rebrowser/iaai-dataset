@@ -290,7 +290,7 @@
     "name": "mileage",
     "type": "float",
     "description": "Odometer reading in miles",
-    "fillRate": 96,
+    "fillRate": 97,
     "premium": false
   },
   {
