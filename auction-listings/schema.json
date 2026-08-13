@@ -535,7 +535,7 @@
     "name": "countryOfOrigin",
     "type": "string",
     "description": "Country where vehicle was manufactured",
-    "fillRate": 100,
+    "fillRate": 99,
     "premium": false
   },
   {
@@ -563,7 +563,7 @@
     "name": "image360Url",
     "type": "string",
     "description": "360-degree view URL",
-    "fillRate": 70,
+    "fillRate": 71,
     "premium": true
   },
   {
